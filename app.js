@@ -20,6 +20,6 @@ app.get("/",function(req,res){
 //     res.render("author",{nav:[{link:"/book",Title:"Book"},{link:'/author',Title:"Author"}],Pagetitle:"Library"})
 // })
 
-app.listen(3000,function(req,res){
+app.listen(process.env.PORT || 3000,function(req,res){
     console.log("server is ready")
 })
